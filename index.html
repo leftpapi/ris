@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Risxon</title>
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
   html, body {
     margin: 0;
@@ -26,11 +27,19 @@
   .risxon-text {
     font-size: 10vw;
     font-weight: 900;
-    color: #eaeaea;
     letter-spacing: 4px;
-    text-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
-    transition: all 0.3s ease;
     margin: 0;
+    background: linear-gradient(90deg, #ffffff, #ffffff, #b967ff, #7f00ff, #b967ff, #ffffff, #ffffff);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorShift 10s ease-in-out infinite;
+  }
+
+  @keyframes colorShift {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   .discord-link {
