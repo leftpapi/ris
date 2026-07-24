@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risxon</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0d0d15 60%, #050507 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .risxon-text {
+    font-size: 10vw;
+    font-weight: 900;
+    color: #eaeaea;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
+    transition: all 0.3s ease;
+    margin: 0;
+  }
+
+  .discord-link {
+    margin-top: 25px;
+    font-size: 1.8vw;
+    color: #5865F2;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .discord-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(88, 101, 242, 0.9);
+  }
+
+  .coming-soon {
+    margin-top: 20px;
+    font-size: 1.5vw;
+    color: #8a8a9a;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  @media (max-width: 700px) {
+    .risxon-text {
+      font-size: 14vw;
+    }
+    .discord-link {
+      font-size: 4vw;
+    }
+    .coming-soon {
+      font-size: 4vw;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="risxon-text">RISXON</h1>
+  <a class="discord-link" href="https://discord.gg/risxon" target="_blank" rel="noopener noreferrer">discord.gg/risxon</a>
+  <div class="coming-soon">Coming Soon</div>
+</div>
+
+</body>
+</html>
